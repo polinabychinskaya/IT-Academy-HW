@@ -1,0 +1,105 @@
+<!--Student: Polina Bychinskaya; Group: SC1-120-23-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOW-TO?</title>
+</head>
+<body>
+    <img src="icon.png" align="right" width="200" alt="Это изображение логотипа языка программирования Python" title="Логотип Python">
+    <a name="maincontent"></a>
+    <h1>HOW-TO: Программа на Python, Часть 1</h1>
+    <ul>
+        <li><a href="index1.html" title="Нажмите, чтобы открыть часть 1"><em>Программа на Python &mdash; часть 1</em></a></li>
+        <li><a href="index2.html" title="Нажмите, чтобы открыть часть 2"><em>Программа на Python &mdash; часть 2</em></a></li>
+        <li><a href="index3.html" title="Нажмите, чтобы открыть часть 3"><em>Программа на Python &mdash; часть 3</em></a></li>
+    </ul>
+    <a name="content1"></a>
+    <h2>Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+    <ul>
+        <li><a href="#chapter1">Наша первая программа</a></li>
+        <li><a href="#chapter2">Пример цикла For</a></li>
+    </ul>
+    <p>Из множества существующих языков программирования Python &mdash; один из самых лёгких 
+        в изучении. Он создан в конце 80-&#x445; годов XX века, но &#x441; тех пор он сильно изменился. 
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не 
+        обращают внимания при выборе языка для изучения. &#x412; этой статье мы рассмотрим 
+        создание консольных приложений, &#x430; в следующей &mdash; программирование графических 
+        интерфейсов <u>(GUI)</u>. Давайте создадим простую программу прямо сейчас.
+    </p>
+    <a name="chapter1"></a>
+    <h2>Наша первая программа</h2>
+    <a href="#content1">&#x41a; содержанию</a>
+    <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает 
+       каждая строка и пойдём дальше.
+    </p>
+    <p>
+        Введите эти 4 строки:  
+    </p>
+    <pre>
+        <code>
+        #!/usr/bin/env python
+        print 'Hello. I am a python program.'
+        name = raw_input("What is your name?")
+        print "Hello there, " + name + "!" 
+        </code>
+    </pre>
+    <p>
+        Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить &#x435;&#x433;&#x43e; в папке 
+        <b>python&#x5F;examples</b> в домашнем каталоге. Этот пример показывает, как просто написать 
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для 
+        этого введите в терминале 
+    </p>
+    <pre>
+        <u><em><b>chmod +x hello.py</b></em></u>
+    </pre>
+    <p>
+        в папке, в которой вы сохранили программу. Теперь запустите её.
+    </p>
+    <pre>
+        <code>
+        greg@earth:~/python_examples$ ./hello.py
+        Hello. I am a python program.
+        What is your name? Ferd Burphel
+        Hello there, Ferd Burphel!
+        greg@earth:~/python_examples$  
+        </code>      
+    </pre>
+    <p>
+        Вот и всё.
+    </p>
+    <a name="chapter2"></a>
+    <h2>
+        Пример цикла For
+    </h2>
+    <a href="#content1">&#x41a; содержанию</a>
+    <p>
+        Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый 
+        редактор и наберите следующую программу:
+    </p>
+    <pre>
+        <code>
+        #!/usr/bin/env python
+        for cntr in range(0,10):
+            print cntr
+        </code>
+    </pre>
+    <p>
+        <em>&#x41d;&#x435; забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. &#x412; 
+        Python для указания на блоки кода используются не круглые «&#40;» и фигурные «&#123;» скобки 
+        как в других языках программирования, &#x430; отступы
+    </p>
+    <a>
+        <img src="leftbutton.png" align="left" width="30" alt="Кнопка &#34;вернуться назад&#34;" title="Вернуться назад">
+    </a>
+    <a href="index2.html">
+        <img src="rightbutton.png" align="right" width="30" alt="Кнопка &#34;перейти на следующую страницу&#34;" title="Перейти на следующую страницу">
+    </a>
+    <div align="center">
+        <a href="#maincontent">
+            <img src="home.png" width="30" alt="Кнопка &#34;домой&#34;" title="Перейти на главную страницу">
+        </a>
+    </div>
+</body>
+</html>
