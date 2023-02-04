@@ -20,23 +20,23 @@
 </head>
 <body>
     <h1>Заполните анкету</h1>
-    <form name="personal_data" action="http://sc.it-academy.by/fe/form.php" method="post">
+    <form name="buttons" action="http://fe.it-academy.by/TestForm.php" method="post">
         <fieldset>
             <legend>Личные данные</legend>
-            <input class="data" type="text" autofocus size="25" required pattern="^[&#x410;-Яа-яЁё]+$" placeholder="Фамилия">
+            <input name="lastname" class="data" type="text" autofocus size="25" required pattern="^[&#x410;-Яа-яЁё]+$" placeholder="Фамилия">
             <br>
-            <input class="data" type="text" size="20" required pattern="^[&#x410;-Яа-яЁё]+$" placeholder="Имя">
+            <input name="firstname" class="data" type="text" size="20" required pattern="^[&#x410;-Яа-яЁё]+$" placeholder="Имя">
             <br>
-            <input class="data" type="text" size="24" required pattern="^[&#x410;-Яа-яЁё]+$" placeholder="Отчество">
+            <input name="patronymic" class="data" type="text" size="24" required pattern="^[&#x410;-Яа-яЁё]+$" placeholder="Отчество">
             <br>
             <fieldset>
                 <legend>Паспортные данные</legend>
-                <input class="data" placeholder="AA" id="mode" type="text" pattern="[A-Z]{2}" maxlength="2" minlength="2" required>
-                <input class="data" placeholder="1234567" id="num" type="text" pattern="[0-9]{7}" maxlength="7" minlength="7" required>
+                <input name="mode" class="data" placeholder="AA" id="mode" type="text" pattern="[A-Z]{2}" maxlength="2" minlength="2" required>
+                <input name="nums" class="data" placeholder="1234567" id="num" type="text" pattern="[0-9]{7}" maxlength="7" minlength="7" required>
             </fieldset>
             <fieldset>
                 <legend>Дата рождения</legend>
-                <input class="data" placeholder="2004" id="date" type="text" pattern="[0-9]{4}">
+                <input name="year" class="data" placeholder="2004" id="date" type="text" pattern="[0-9]{4}">
                 <br>
                 <select name="list" id="list">
                     <optgroup label="Месяц">
@@ -55,7 +55,7 @@
                     </optgroup>
                 </select>
                 <br>
-                <input class="data" type="number" min="1" max="31" step="1">
+                <input name="day" class="data" type="number" min="1" max="31" step="1">
             </fieldset>
             <select name="list" id="list" required>
                 <optgroup label="Национальность">
@@ -66,8 +66,6 @@
             <p>Адрес:</p>
             <textarea name="text" lang="ru"></textarea>
         </fieldset>
-    </form>
-    <form name="hobby_interest" action="http://sc.it-academy.by/fe/form.php" method="post">
         <fieldset>
             <legend>Интересы</legend>
             <fieldset>
@@ -110,36 +108,28 @@
                 </select>
             </fieldset>
         </fieldset>
-    </form>
-    <form name="sign_in" action="http://sc.it-academy.by/fe/form.php" method="post">
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
-            <input class="data" type="text" placeholder="Логин" size="20" required pattern="[A-Za-z]{5,}">
+            <input name="login" class="data" type="text" placeholder="Логин" size="20" required pattern="[A-Za-z]{5,}">
             <br>
-            <input class="data" type="password" placeholder="Пароль" size="20" min="10" required pattern="[A-Za-z]{10,}" autocomplete="off">
+            <input name="password" class="data" type="password" placeholder="Пароль" size="20" min="10" required pattern="[A-Za-z]{10,}" autocomplete="off">
         </fieldset>
-    </form>
-    <form name="contacts" action="http://sc.it-academy.by/fe/form.php" method="post">
         <fieldset>
             <legend>Координаты</legend>
-            <input class="data" type="email" pattern="(\W|^)[\w.\-]{0,25}@(yahoo|hotmail|gmail)\.com(\W|$)" placeholder="введите адрес почты">
+            <input name="email" class="data" type="email" pattern="(\W|^)[\w.\-]{0,25}@(yahoo|hotmail|gmail)\.com(\W|$)" placeholder="введите адрес почты">
             <br>
-            <input class="data" type="url" placeholder="введите адрес сайта" pattern="^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]*)?$">
+            <input name="url" class="data" type="url" placeholder="введите адрес сайта" pattern="^(ht|f)tp(s?)\:\/\/[0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*(:(0-9)*)*(\/?)([a-zA-Z0-9\-\.\?\,\'\/\\\+&amp;%\$#_]*)?$">
         </fieldset>
-    </form>
-    <form name="nums" action="http://sc.it-academy.by/fe/form.php" method="post">
         <fieldset>
             <legend>Цифры</legend>
-            <input class="data" type="number" min="-2.5" max="2.5" step="0.1">
+            <input name="nums" class="data" type="number" min="-2.5" max="2.5" step="0.1">
             <br>
-            <input type="range" min="1" max="10">
+            <input name="dragnums" type="range" min="1" max="10">
         </fieldset>
-    </form>
-    <form name="buttons" action="http://sc.it-academy.by/fe/form.php" method="post">
         <fieldset>
             <legend>Кнопки управления</legend>
-            <input type="submit" value="Отправить">
-            <input type="reset" value="Сбросить">
+            <input name="button_send" type="submit" value="Отправить">
+            <input name="button_reset" type="reset" value="Сбросить">
             <br>
             <br>
             <button type="submit">
