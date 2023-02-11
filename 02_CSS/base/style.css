@@ -1,0 +1,18 @@
+#hearts{
+    float:left;
+}
+#spades{
+    float:left;
+}
+#diamonds{
+    float:left;
+}
+#clubs{
+    float:left;
+}
+#joker{
+    float:left;
+}
+.cards{
+    margin-bottom: -170px;
+}

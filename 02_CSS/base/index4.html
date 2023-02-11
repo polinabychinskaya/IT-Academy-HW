@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheme</title>
+    <style>
+        #wrap{
+            background-color:  #cccccc;
+        }
+        #navi{
+            background-color: #b3b3b3;
+            float: left;
+            width: 250px;
+            
+        }
+        .publish{
+            background-color: #808080;
+            margin-bottom: 5px;
+            margin-left: 250px;
+        }
+        #footer{
+            clear: both;
+            background-color: #b3b3b3;
+            height: 20px;
+        }
+        #imgset{
+            float: right;
+            margin-right: 5px;
+        }
+        #line{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="navi">
+            <h5>Блок навигации</h5>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>
+                    Блок навигации наполните контентом достаточным,
+                    чтобы по высоте он начинал захватывать вторую статью, 
+                    как показано в данном примере.
+                </li>
+            </ul>
+        </div>
+        <div class="publish">
+            <h5>Статья 1</h5>
+            <p>
+                Размер блока: <br>
+                Занимает всю доступную ширину. <br>
+                Должен присутствовать цвет фона. <br>
+                &#x412;&#x43e; всех "статьях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin 
+                bottom.
+            </p>
+        </div>
+        <div class="publish">
+            <h5>Статья 2</h5>
+            <p>
+                Размер блока: <br>
+                Занимает всю доступную ширину. <br>
+                Должен присутствовать цвет фона. <br>
+                &#x412;&#x43e; всех "статьях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin 
+                bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри 
+                данной статьи для этой картинки.
+            </p>
+            <div id="imgset">
+                <img src="sendmail.png" width="100px">
+            </div>
+            <div id="line"></div>
+        </div>
+    <div id="line"></div>
+    </div>
+        <div id="footer"></div>
+</body>
+</html>
