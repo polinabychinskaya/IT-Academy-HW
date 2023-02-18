@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjustable menu</title>
+    <style>
+        .wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        #day{
+            border:solid;
+            border-color:rgb(40, 71, 72);
+            border-width: 2px;
+            border-radius: 5px;
+            background-color: cadetblue;
+            height: 40px;
+            width: 16%;
+            float:left;
+            text-align: center;
+            cursor: pointer;
+        }
+        .schedule{
+            display: none;
+        }
+        div.schedule > div{
+            border:solid;
+            border-color:rgb(111, 18, 111);
+            border-width: 2px;
+            border-radius: 5px;
+            background-color: rgb(135, 85, 135);
+            height: 40px;
+            text-align: center;
+        }
+        div.wrap > div:hover div.schedule { 
+            display: block;  
+            position: relative;
+            top:22px;
+        }
+        @media all and (max-width: 520px){
+            .wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            }
+            div.wrap > div:hover div.schedule { 
+            display: block;  
+            position: relative;
+            top:15px;
+            left: 82px;
+            }
+            #day{
+            border:solid;
+            border-color:rgb(40, 71, 72);
+            border-width: 2px;
+            border-radius: 5px;
+            background-color: cadetblue;
+            height: 40px;
+            width:80px;
+            float:left;
+            text-align: center;
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="day">Monday
+            <div class='schedule'>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+            </div>
+        </div>
+        <div id="day">Tuesday
+            <div class='schedule'>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+            </div>
+        </div>
+        <div id="day">Wednesday
+            <div class='schedule'>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+            </div>
+        </div>
+        <div id="day">Thursday
+            <div class='schedule'>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+            </div>
+        </div>
+        <div id="day">Friday
+            <div class='schedule'>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+            </div>
+        </div>
+        <div id="day">Saturday
+            <div class='schedule'>
+                <div>Breakfast</div>
+                <div>Lunch</div>
+                <div>Dinner</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
