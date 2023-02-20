@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc Types</title>
+    <style>
+        .paragraph{
+            border: solid;
+            border-width: 1px;
+            border-color:dimgrey;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .word{
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+        .docword:hover div.word{
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            left: 140px;
+            top: -17px
+        }
+        .pdf{
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+        .docpdf:hover div.pdf{
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            left: 105px;
+            top: -17px
+        }
+        .archive{
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+        .docarch:hover div.archive{
+            visibility: visible;
+            opacity: 1;
+            position: relative;
+            left: 50px;
+            top: -17px
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов</h1>
+    <div class="paragraph">
+        .DOC или .doc (от англ. <img src="download.png"><a href="https://ru.wikipedia.org/wiki/.doc" target="_blank">document</a>) - расширение имени файла, используемое для файлов,
+        представляющих текст, &#x441; разметкой или без. Расширение .DOC часто использовалось для
+        обозначения простых текстовых файлов без формирования, однако позже стало
+        использоваться для двоичных форматов &#x441; разметкой.
+        <br>
+        <div class="docword"><a href="https://ru.wikipedia.org/wiki/Microsoft_Word" target="_blank">Документ MS Word</a> <div class="word"><img src="word.jpg" alt="wordlogo"></div></div>
+    </div>
+    <div class="paragraph">
+        Portable Document Format (<img src="download.png"><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank">PDF</a>) &mdash; межплатформенный формат электронных документов,
+        разработанный фирмой Adobe Systems &#x441; использованием ряда возможностей языка
+        Postscript.
+        <br>
+        <div class="docpdf"><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank">Документ PDF</a><div class="pdf"><img src="pdf.png" alt="pdflogo"></div></div>
+    </div>
+    <div class="paragraph">
+        ZIP &mdash; популярный формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет расширение <img src="download.png"><a href="https://en.wikipedia.org/wiki/ZIP_(file_format)" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+        файлов, которое можно из него извлечь путем распаковки &#x441; помощью специальной
+        программы.
+        <br>
+        <div class="docarch"><a href="https://en.wikipedia.org/wiki/WinRAR" target="_blank">Архив</a><div class="archive"><img src="archive.gif" alt="archivelogo"></div></div>
+    </div>
+    <h2>Это список файлов</h2>
+    <img src="blank.jpg"><a href="https://ru.wikipedia.org/wiki/Microsoft_Word" target="_blank">Документ MS Word</a> <br>
+    <img src="blank.jpg"><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank">Документ PDF</a> <br>
+    <img src="blank.jpg"><a href="https://en.wikipedia.org/wiki/WinRAR" target="_blank">Архив</a> 
+</body>
+</html>

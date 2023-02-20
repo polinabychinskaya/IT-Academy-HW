@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc Types</title>
+    <style>
+        .paragraph{
+            border: solid;
+            border-width: 1px;
+            border-color:dimgrey;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        a[href$='.doc']::before{
+            content: url(../base/download.png)
+        }
+        a[href$='Microsoft_Word']::before{
+            content: url(../base/word.jpg)
+        }
+        a[href$='lecys02zmg627694834']::before{
+            content: url(../base/download.png)
+        }
+        a[href$='ZIP']::before{
+            content: url(../base/download.png)
+        }
+        a[href$='https://ru.wikipedia.org/wiki/Portable_Document_Format']::before{
+            content: url(../base/pdf.png)
+        }
+        a[href$='https://ru.wikipedia.org/wiki/Portable_Document_Format']::before{
+            content: url(../base/pdf.png)
+        }
+        a[href$='WinRAR']::before{
+            content: url(../base/archive.gif)
+        }
+        a[href$='365/word']::before{
+            content: url(../base/blank.jpg)
+        }
+        a[href$='764911666']::before{
+            content: url(../base/blank.jpg)
+        }
+        a[href$='zip.org/']::before{
+            content: url(../base/blank.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов</h1>
+    <div class="paragraph">
+        .DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/.doc" target="_blank">document</a>) - расширение имени файла, используемое для файлов,
+        представляющих текст, &#x441; разметкой или без. Расширение .DOC часто использовалось для
+        обозначения простых текстовых файлов без формирования, однако позже стало
+        использоваться для двоичных форматов &#x441; разметкой.
+        <br>
+        <div class="docword"><a href="https://ru.wikipedia.org/wiki/Microsoft_Word" target="_blank">Документ MS Word</a></div>
+    </div>
+    <div class="paragraph">
+        Portable Document Format (<a href="https://dic.academic.ru/dic.nsf/ruwiki/24449?ysclid=lecys02zmg627694834" target="_blank">PDF</a>) &mdash; межплатформенный формат электронных документов,
+        разработанный фирмой Adobe Systems &#x441; использованием ряда возможностей языка
+        Postscript.
+        <br>
+        <div class="docpdf"><a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank">Документ PDF</a></div>
+    </div>
+    <div class="paragraph">
+        ZIP &mdash; популярный формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет расширение <a href="https://en.wikipedia.org/wiki/ZIP" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или несколько
+        файлов, которое можно из него извлечь путем распаковки &#x441; помощью специальной
+        программы.
+        <br>
+        <div class="docarch"><a href="https://en.wikipedia.org/wiki/WinRAR" target="_blank">Архив</a></div>
+    </div>
+    <h2>Это список файлов</h2>
+    <a href="https://www.microsoft.com/ru-ru/microsoft-365/word" target="_blank">Документ MS Word</a> <br>
+    <a href="https://free-pdf.ru/chto-takoe-pdf-format.php?ysclid=lecyzdkdqv764911666" target="_blank">Документ PDF</a> <br>
+    <a href="https://www.7-zip.org/" target="_blank">Архив</a> 
+</body>
+</html>
